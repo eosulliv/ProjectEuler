@@ -17,8 +17,6 @@ How many Sundays fell on the first of the month during the twentieth century (1 
 import time
 from datetime import date
 
-# Lamda functions
-
 # Functions
 def numSundays(start_y, end_y):
     days = getStartDay(start_y)
