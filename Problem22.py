@@ -17,17 +17,11 @@ import time
 # Functions
 # Open file and read in names
 def readNames(f_name):
-    # Open file and read names
     f = open(f_name, "r") 
     content = f.read()
-    # line = f.readline()
-    # line = line[0:102]
     
-    # Remove starting and trailing quotation marks
-    content = content[1:-1]
-    # Split line to separate names
-    names = content.split('\",\"')
-    # Close file
+    content = content[1:-1] # Remove starting and trailing quotation marks
+    names = content.split('\",\"') # Split line to separate names
     f.close()
     return names
 
